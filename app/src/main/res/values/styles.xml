@@ -1,0 +1,60 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--&lt;!&ndash;-->
+        <!--Base application theme, dependent on API level. This theme is replaced-->
+        <!--by AppBaseTheme from res/values-vXX/styles.xml on newer devices.-->
+    <!--&ndash;&gt;-->
+    <!--<style name="AppBaseTheme" parent="android:Theme.Light">-->
+        <!--&lt;!&ndash;-->
+            <!--Theme customizations available in newer API levels can go in-->
+            <!--res/values-vXX/styles.xml, while customizations related to-->
+            <!--backward-compatibility can go here.-->
+        <!--&ndash;&gt;-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; Application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="AppBaseTheme">-->
+        <!--&lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;-->
+    <!--</style>-->
+
+    <!--<style name="AppBaseTheme" parent="android:Theme.Light"></style>-->
+
+    <!--<style name="AppTheme" parent="AppBaseTheme"></style>-->
+
+    <style name="btn">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="title_bar">
+        <item name="android:textColor">#d9f3ff</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="gallery_big">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="gallery_small">
+        <item name="android:textColor">#aaffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="popup">
+        <item name="android:textColor">#aa000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="whitebutton">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ButtonStyle" parent="android:Widget.Button">
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+</resources>

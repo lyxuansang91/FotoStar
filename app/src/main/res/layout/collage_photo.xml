@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/aviary_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/captureLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <adu.app.photobeauty.view.PhotoSortView
+                android:id="@+id/photoSorter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#0000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/borderGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_bg"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/gallery_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:maxWidth="100dp"
+                    android:text="@string/tvbordersize" />
+
+                <SeekBar
+                    android:id="@+id/borderSlider"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:max="10"
+                    android:progress="0" />
+
+                <Button
+                    android:id="@+id/borderColorBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#ffffff"
+                    android:onClick="onChangeBorderColorBtn"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_marginLeft="0.3dip"
+            android:background="@drawable/title_bg"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/gridSticker"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:horizontalSpacing="0dp"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:verticalSpacing="0dp"
+                android:visibility="gone"></GridView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/extendGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/title_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dip"
+                android:layout_gravity="top"
+                android:layout_marginBottom="0dp"
+                android:background="#22000000" />
+
+            <HorizontalScrollView
+                android:id="@+id/patternScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:fadingEdge="none"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/patternGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dip"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="2dp"
+                android:background="#000000" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/toolGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/title_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <HorizontalScrollView
+            android:id="@+id/toolScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="onLayoutClick"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/tool_layout_selector"
+                        android:gravity="center"
+                        android:onClick="onLayoutClick" />
+
+                    <TextView
+                        style="@style/whitebutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onLayoutClick"
+                        android:text="@string/tvlayout" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="30dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="onFreeClick"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/tool_free_selector"
+                        android:gravity="center"
+                        android:onClick="onFreeClick" />
+
+                    <TextView
+                        style="@style/whitebutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onFreeClick"
+                        android:text="@string/tvfree" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="30dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="onBorderClick"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/tool_border_selector"
+                        android:gravity="center"
+                        android:onClick="onBorderClick" />
+
+                    <TextView
+                        style="@style/whitebutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onBorderClick"
+                        android:text="@string/tvborder" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="30dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="onStickerClick"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/tool_sticker_selector"
+                        android:gravity="center"
+                        android:onClick="onStickerClick" />
+
+                    <TextView
+                        style="@style/whitebutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onStickerClick"
+                        android:text="@string/tvsticker" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="30dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="onTextClick"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/tool_text_selector"
+                        android:gravity="center"
+                        android:onClick="onTextClick" />
+
+                    <TextView
+                        style="@style/whitebutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onTextClick"
+                        android:text="@string/tvtext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="onFrameClick"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/tool_frame_selector"
+                        android:gravity="center"
+                        android:onClick="onFrameClick" />
+
+                    <TextView
+                        style="@style/whitebutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onFrameClick"
+                        android:text="@string/tvframe" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:background="#000000" />
+    </FrameLayout>
+
+</FrameLayout>

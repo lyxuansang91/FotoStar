@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gallery"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gallery" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gallery"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/titlebar" />
+
+            <LinearLayout
+                android:id="@+id/captureLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="70dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/fontTV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/fontEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/lbl_text_hint"
+                        android:paddingLeft="5dp"
+                        android:textColor="#aa010101"
+                        android:textCursorDrawable="@null" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/clear"
+                        android:onClick="onClearBtn" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/colorButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-2dp"
+                        android:background="@drawable/button_bg"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:onClick="onColorBtn"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:onClick="onColorBtn"
+                            android:text="A"
+                            android:textColor="#010101"
+                            android:textSize="31sp"
+                            android:textStyle="normal" />
+
+                        <View
+                            android:id="@+id/fontColorView"
+                            android:layout_width="20dp"
+                            android:layout_height="6dp"
+                            android:layout_marginTop="-5dp"
+                            android:background="#ff0000"
+                            android:onClick="onColorBtn" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/boldBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/text_maker_b_selector"
+                        android:onClick="onBoldBtn" />
+
+                    <Button
+                        android:id="@+id/italicBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/text_maker_i_selector"
+                        android:onClick="onItalicBtn" />
+
+                    <Button
+                        android:id="@+id/underlineBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/text_maker_u_selector"
+                        android:onClick="onUnderLineBtn" />
+
+                    <Spinner
+                        android:id="@+id/sizeList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="right|center_vertical"
+                        android:minWidth="60dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <GridView
+        android:id="@+id/gridFont"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#0000"
+        android:horizontalSpacing="0dp"
+        android:listSelector="@null"
+        android:minHeight="200dp"
+        android:numColumns="4"
+        android:verticalSpacing="0dp"
+        android:visibility="visible" >
+    </GridView>
+
+</LinearLayout>

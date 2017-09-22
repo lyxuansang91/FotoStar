@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="msg_rate_checkbox">Jangan Tunjukkan lagi</string>
+    <string name="msg_rate">Jika anda suka aplikasi ini, sila beri ia 5 bintang dan klik + 1 butang. Ia mendorong kita untuk membuat aplikasi percuma kami lebih baik! Terima kasih!</string>
+    <string name="lbl_rate_yes">Ya, pasti</string>
+    <string name="lbl_rate_no">Tidak, keluar aplikasi</string>
+    <string name="lbl_1anguage">Bahasa</string>
+    <string name="lbl_automatic">Automatik</string>
+    <string name="tv_title_gallery">Galeri</string>
+    <string name="tv_title_collage">Kolaj foto</string>
+    <string name="tv_title_mask_maker">Untuk membuat topeng</string>
+    <string name="tv_title_text_maker">Pembuat teks</string>
+    <string name="msg_max_pick">Maksimum adalah %1$ d!</string>
+    <string name="msg_confirm_delete">Adakah anda pasti ingin menghapuskan?</string>
+    <string name="msg_confirm_back">Adakah anda pasti mahu kembali?</string>
+    <string name="msg_save_complete">Disimpan gambar dalam</string>
+    <string name="msg_save_err">Tidak dapat menyimpan gambar!</string>
+    <string name="msg_back_press">Tekan kembali sekali lagi untuk keluar!</string>
+    <string name="msg_set_wall_complete">Kertas dinding yang baru telah ditetapkan!</string>
+    <string name="msg_set_wall_err">Tidak dapat mengeset kertas dinding!</string>
+    <string name="lbl_yes">Ya</string>
+    <string name="lbl_no">tidak</string>
+    <string name="lbl_collage">Kolaj</string>
+    <string name="lbl_confirm_back">pergi balik?</string>
+    <string name="lbl_text_hint">Masukkan teks anda di sini...</string>
+    <string name="lbl_slogan">Mencipta gambar terbaik anda</string>
+    <string name="lbl_version">Versi</string>
+    <string name="msg_min_pick">Anda mesti memilih sekurang-kurangnya %1$ d gambar!</string>
+    <string name="tv_picked">Memilih %1$ d (Max: %2$ d, Min: %3$ d )</string>
+    <string name="msg_waiting">sila tunggu...</string>
+    <string name="tvmask">Topeng</string>
+    <string name="tvcamera">Kamera</string>
+    <string name="tvgallery">Galeri</string>
+    <string name="tvchange">Perubahan</string>
+    <string name="tvdelete">Menghapuskan</string>
+    <string name="tvlock">Kunci</string>
+    <string name="tvunlock">Buka kunci</string>
+    <string name="tvlayout">Susun atur</string>
+    <string name="tvfree">Percuma</string>
+    <string name="tvborder">Sempadan/BG</string>
+    <string name="tvframe">Rangka</string>
+    <string name="tvbordersize">Saiz sempadan:</string>
+    <string name="tvsticker">Pelekat</string>
+    <string name="tvtext">Teks</string>
+    <string name="tvpaint">Cat</string>
+    <string name="tveffect">Kesan</string>
+    <string name="tvlike">Seperti aplikasi!</string>
+    <string name="tvshareapp">Bahagian aplikasi</string>
+    <string name="tvcontact">Hubungi kami</string>
+    <string name="tvshare">Saham</string>
+    <string name="tvwallpaper">Tetap sbg gmbr latar</string>
+    <string name="tvview">Paparan gambar</string>
+    <string name="tvpickColor">Memilih warna</string>
+    <string name="mask_lbl_1">Bunga</string>
+    <string name="mask_lbl_2">Daun</string>
+    <string name="mask_lbl_3">Burung</string>
+    <string name="mask_lbl_4">Kucing</string>
+    <string name="mask_lbl_5">Haiwan</string>
+    <string name="mask_lbl_6">Awan</string>
+    <string name="sticker_lbl_2">Gaya</string>
+    <string name="sticker_lbl_3">Klip gambar</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gallery"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/popupLockBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/popup_lock_selector" />
+
+        <TextView
+            android:id="@+id/popupLockTV"
+            style="@style/popup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/tvlock" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/popupDeleteBtn"
+            android:layout_width="30dp"
+            android:layout_height="26dp"
+            android:background="@drawable/popup_delete_selector" />
+
+        <TextView
+            android:id="@+id/popupDeleteTV"
+            style="@style/popup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/tvdelete" />
+    </LinearLayout>
+
+</LinearLayout>

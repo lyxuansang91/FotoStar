@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gallery"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="3dp" >
+
+        <Button
+            android:id="@+id/popupEditBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/popup_edit_selector" />
+
+        <TextView
+            android:id="@+id/popupEditTV"
+            style="@style/popup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/tvedit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lockGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/popupLockBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/popup_lock_selector" />
+
+        <TextView
+            android:id="@+id/popupLockTV"
+            style="@style/popup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/tvlock" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/popupMaskBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/popup_mask_selector" />
+
+        <TextView
+            android:id="@+id/popupMaskTV"
+            style="@style/popup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/tvmask" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/popupChangeBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/popup_change_selector" />
+
+        <TextView
+            android:id="@+id/popupChangeTV"
+            style="@style/popup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/tvchange" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp" >
+
+        <Button
+            android:id="@+id/popupDeleteBtn"
+            android:layout_width="30dp"
+            android:layout_height="26dp"
+            android:background="@drawable/popup_delete_selector" />
+
+        <TextView
+            android:id="@+id/popupDeleteTV"
+            style="@style/popup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/tvdelete" />
+    </LinearLayout>
+
+</LinearLayout>

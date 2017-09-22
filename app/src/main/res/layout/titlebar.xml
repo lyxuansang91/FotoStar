@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_bg" >
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#032235" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitleText"
+        style="@style/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="" />
+
+    <FrameLayout
+        android:id="@+id/backTitleGroup"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        android:background="@drawable/button_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onBackBtn" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="@drawable/ic_back"
+            android:onClick="onBackBtn" />
+
+        <View
+            android:layout_width="0.2dip"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="#66ffffff" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/checkTitleGroup"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_margin="0dp"
+        android:background="@drawable/button_selector"
+        android:clickable="true"
+        android:onClick="onCheckBtn"
+        android:visibility="visible" >
+
+        <View
+            android:layout_width="0.2dip"
+            android:layout_height="25dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="#66ffffff"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="@drawable/ic_check"
+            android:onClick="onCheckBtn" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/menuBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="0dp"
+        android:background="@drawable/menu_dot_selector"
+        android:onClick="onMenuBtn"
+        android:visibility="gone" />
+
+</FrameLayout>

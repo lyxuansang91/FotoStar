@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/aviary_background_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/titlebar" />
+
+        <LinearLayout
+            android:id="@+id/captureLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <adu.app.photobeauty.view.PhotoSortView
+                android:id="@+id/photoSorter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/extendGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/title_bg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <HorizontalScrollView
+            android:id="@+id/patternScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/patternGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:background="#000000" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/toolGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/title_bg"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/toolScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/toolGroupInside"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:background="#000000" />
+    </FrameLayout>
+
+</FrameLayout>

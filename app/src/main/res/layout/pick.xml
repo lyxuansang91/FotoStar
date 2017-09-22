@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gallery"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/camerabtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/pick_camera_selector" />
+
+        <TextView
+            android:id="@+id/cameratv"
+            style="@style/popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tvcamera" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/gallerybtn"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/pick_gallery_selector" />
+
+        <TextView
+            android:id="@+id/gallerytv"
+            style="@style/popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tvgallery" />
+    </LinearLayout>
+
+</LinearLayout>

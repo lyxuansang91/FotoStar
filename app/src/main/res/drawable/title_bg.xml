@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <gradient
+        android:angle="270"
+        android:centerColor="@color/aviary_nav_divider_light"
+        android:endColor="@color/aviary_nav_primary_color"
+        android:startColor="@color/aviary_nav_secondary_color" />
+
+    <stroke
+        android:width="0dp"
+        android:color="@color/aviary_nav_divider_dark" />
+
+</shape>

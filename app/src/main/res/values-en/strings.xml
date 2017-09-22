@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="tv_picked">Picked %1$d (Max: %2$d, Min: %3$d)</string>
+</resources>
